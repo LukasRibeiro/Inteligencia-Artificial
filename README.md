@@ -1,7 +1,9 @@
-# Inteligencia artificial com Python
+# Inteligencia Artificial.
 
 ### Objetivo
 Trabalho desenvolvido para a materia de inteligencia artificial, utilizando a linguagem de programação python, juntamente com biblioteca **scikit-learn**, e tambem **pyknow** para a realização dos codigos.
+
+**OBS: O sistema especialista foi desenvolvido como um prototipo para um trabalho escolar da materia de inteligencia artificial, as questões levantadas neste trabalho, bem como as perguntas e o peso que cada uma tem, não condiz como um sistema desenvolvido por supervisão de um especialista na area, sendo assim cada questão levantada neste trabalho foi realizada por nós alunos**
 
 ## Sistema Especilaista
 Sistemas especialistas, são sistemas que tem como objetivo simular o raciocínio de um profissional em alguma área de conhecimento específica. A arquitetura mais comum de um sistema especialista é a que envolve regras de produção na sua base de conhecimento. 
@@ -13,7 +15,7 @@ As regras de produção de um sistema especialista, consiste em duas partes cham
 ### Descrição do problema
 Atualmente existem diversas profissões e opções de mercado, e o jovem é praticamente obrigado a escolher ou pelo menos traçar um objetivo até os seus 18 anos, porém a grande maioria ainda não escolheu uma profissão ou não se identificou em nenhuma área científica. Com base nessa situação, foi desenvolvido um sistema especialista, a fim de guiar os jovens a se qual área científica ele mais se enquadra.
 
-### Regras em Pseudocódigo
+### Regras
 
 Antes de mais nada é preciso saber um pouco sobre a lógica usada no sistema. Foi levado em conta, o que leva uma pessoa ser da sua determinada área científica, quais características elas compartilham, para poder generalizar no sistema e classificar o indivíduo. Com base, nisso foi realizado uma tabela separando o eixo x como Lógico, e o eixo y como Emocional, de modo que a cada pergunta feita pelo programa, são setadas em uma variável os valores de x e y dela, levando em consideração a pergunta.
 	Exemplo:
@@ -23,9 +25,13 @@ Antes de mais nada é preciso saber um pouco sobre a lógica usada no sistema. F
 Se a resposta for sim, o sistema irá atribuir os valores x (Lógico) = 9 (ou 90%) e y (Emoção) = 1 (ou 10%), tal como seu cérebro tende mais para a razão e portanto essa pessoa seria de exatas
 E se a resposta for não atribui os valores de x e y = 1, e dizendo ao programa que o cérebro da pessoa não está muito para o lado lógico.
 
+### Gráfico de resposta do sistema especialista
+
 ![alt text](./imagens/Tabela.png)
 
 O grafico acima, ilustra a resposta que o usuario ira receber do sistema especialista. O grafico é dividido de acordo com as 3 categorias que os sistema aborda (humanas, exatas e biologicas), sendo assim, de acordo com as resposta do usuario e o peso das questões o sistema ira definir qual area o usuario pertence de acordo com o ponto no grafico. 
+
+### Regras em PseudoCodigo
 
 Logo abaixo estão definidas as regras em pseudoCodigo desenvolvidos para criar o sistema especialista:
 
@@ -79,9 +85,13 @@ ENTÃO x = 3 e y = 7
 SENÃO x = 3 e y = 3
 ```
 
+### Tabela de pesos
+
 A seguir, a tabela de pesos mostra o peso de cada questão e como ela ira influenciar na reposta final do usuario:
 
-![alt text](./imagens/Tabela de pesos.png)
+![alt text](./imagens/pesos.png)
+
+com estes pesos definidos para cada questão, o sistema consegue definir qual area a pessoa pode ter maior relacionamento de acordo com suas repostas para cada uma das perguntas.
 
 ## Árvore de descisão
 
