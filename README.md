@@ -3,7 +3,7 @@
 ### Objetivo
 Trabalho desenvolvido para a materia de inteligencia artificial, utilizando a linguagem de programação python, juntamente com biblioteca **scikit-learn**, e tambem **pyknow** para a realização dos codigos.
 
-**OBS: O sistema especialista foi desenvolvido como um prototipo para um trabalho escolar da materia de inteligencia artificial, as questões levantadas neste trabalho, bem como as perguntas e o peso que cada uma tem, não condiz como um sistema desenvolvido por supervisão de um especialista na area, sendo assim cada questão levantada neste trabalho foi realizada por nós alunos**
+**OBS: Este Projeto foi desenvolvido como um prototipo para um trabalho escolar da materia de inteligencia artificial, as questões levantadas neste trabalho, bem como as perguntas e o peso que cada uma tem, não condiz como um sistema desenvolvido por supervisão de um especialista na area, sendo assim cada questão levantada neste trabalho foi realizada por nós alunos**
 
 ## Sistema Especilaista
 Sistemas especialistas, são sistemas que tem como objetivo simular o raciocínio de um profissional em alguma área de conhecimento específica. A arquitetura mais comum de um sistema especialista é a que envolve regras de produção na sua base de conhecimento. 
